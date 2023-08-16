@@ -1,0 +1,167 @@
+/* import local Aligrah font  */
+@import url(fonts/Aligrah.css);
+
+/* variables */
+:root {
+  --primaryGreen: #435730;
+  --primaryDarkGreen: #27321c;
+  --neutralGray: #bdc2b4;
+  --neutralWhite: #fff;
+}
+
+/* helper class */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* global reset */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: Aligarh;
+}
+
+body,
+input,
+textarea,
+::placeholder,
+button,
+a {
+  font-family: 'Aligrah', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+body {
+  flex-direction: column;
+
+}
+
+/* contact section  */
+.addAGround-outer-container {
+  padding-top: 20px;
+  min-width: 100%;
+  min-height: 100vh;
+  background-size: min(80rem, 90%);
+  align-items: flex-start;
+  margin-bottom: 2.4rem;
+
+}
+
+.addAGround-inner-container {
+  width: min(80rem, 90%);
+  flex-direction: column;
+  gap: 3.2rem;
+
+  background: url('img/contact_background_leaf.png') no-repeat top left;
+}
+
+/* contact header  */
+.addAGround-header {
+  flex-direction: column;
+  gap: 1.2rem;
+  color: var(--primaryDarkGreen);
+}
+
+.addAGround-header .main-heading {
+  font-size: 6.4rem;
+}
+
+
+/* contact form  */
+.addAGround-form {
+  width: 100%;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.addAGround-form-item {
+  width: 100%;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+.addAGround-form-item label,
+.addAGround-btn {
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--primaryDarkGreen);
+}
+
+.addAGround-form-item input,
+.addAGround-form-item textarea {
+  width: 100%;
+  border-radius: 1.2rem;
+  border: 1px solid var(--primaryDarkGreen);
+  padding: 1.8rem;
+  resize: none;
+  font-size: 1.8rem;
+  color: var(--primaryDarkGreen);
+
+}
+
+.addAGround-form-item input::placeholder,
+.addAGround-form-item textarea::placeholder {
+  font-size: 1.8rem;
+  font-family: Aligarh;
+  color: var(--neutralGray);
+}
+
+.addAGround-form-item textarea::-webkit-scrollbar {
+  width: .8rem;
+
+}
+
+.addAGround-form-item textarea::-webkit-scrollbar-track {
+  background-color: var(--neutralGray);
+  border-radius: 5rem;
+}
+
+.addAGround-form-item textarea::-webkit-scrollbar-thumb {
+  background-color: var(--primaryGreen);
+  border-radius: 5rem;
+}
+
+.addAGround-form-item textarea::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primaryDarkGreen);
+}
+
+/* contact button */
+.addAGround-btn {
+  width: 50%;
+  margin-top: 4.8rem;
+  background: none;
+  border-radius: 4rem;
+  border: 1px solid var(--primaryDarkGreen);
+  padding: 1.2rem;
+  gap: 1.2rem;
+  transition: .3s;
+  cursor: pointer;
+  font-family: Aligarh;
+}
+
+.addAGround-btn:hover {
+  background-color: var(--primaryDarkGreen);
+  color: var(--neutralGray);
+}
+
+.addAGround-btn svg {
+  width: 1.6rem;
+  margin-top: .6rem;
+  transition: .6s;
+}
+
+.addAGround-btn:hover svg path {
+  fill: var(--neutralGray);
+}
