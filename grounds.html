@@ -18,7 +18,50 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/grounds.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    fetch('http://localhost:8080/location/list')
+      .then(response => response.json())
+      .then(data => {
+        console.log("Printing");
+        const gridData = data;
+        const gridContainer = document.getElementById('grid-container');
+        const searchInput = document.getElementById('search-input');
 
+        gridContainer.style.display = 'grid';
+        gridContainer.style.gridTemplateColumns = 'repeat(4, 1fr)';
+
+        function updateGrid() {
+          gridContainer.innerHTML = '';
+
+          const searchValue = searchInput.value.toLowerCase();
+
+          gridData.forEach(location => {
+            if (location.name.toLowerCase().includes(searchValue)) {
+              const gridItem = document.createElement('div');
+              gridItem.classList.add('grid-item');
+              gridItem.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${location.imageUrls[0]})`;
+
+              const nameElement = document.createElement('h3');
+              nameElement.textContent = location.name;
+
+              const descriptionElement = document.createElement('p');
+              descriptionElement.textContent = location.location;
+
+              gridItem.appendChild(nameElement);
+              gridItem.appendChild(descriptionElement);
+
+              gridContainer.appendChild(gridItem);
+            }
+          });
+        }
+
+        searchInput.addEventListener('input', updateGrid);
+        updateGrid();
+      })
+      .catch(error => {
+        console.error('API Error:', error);
+      });
+  </script>
 </head>
 <body class="flex">
 
@@ -46,46 +89,13 @@
 </section>
 <!-- contact section  -->
 <section id="contact" class="Ground_display">
-
-  <div class="wrapper">
-    <div id="grid-container"></div>
-    <script>
-    fetch('http://localhost:8080/location/list')
-    .then(response => response.json())
-    .then(data => {
-      console.log("Printing")
-      const gridData = data;
-      const gridContainer = document.getElementById('grid-container');
-      gridData.forEach(location => {
-        const gridItem = document.createElement('div');
-        gridItem.classList.add('grid-item');
-
-        const nameElement = document.createElement('h3');
-        nameElement.textContent = location.name;
-
-        const descriptionElement = document.createElement('p');
-        descriptionElement.textContent = location.location;
-
-        const imageContainer = document.createElement('div');
-        imageContainer.classList.add('image-container');
-        location.imageUrls.forEach(imageUrl => {
-          const imgElement = document.createElement('img');
-          imgElement.src = imageUrl;
-          imageContainer.appendChild(imgElement);
-        });
-
-        gridItem.appendChild(nameElement);
-        gridItem.appendChild(descriptionElement);
-        gridItem.appendChild(imageContainer);
-
-        gridContainer.appendChild(gridItem);
-      });
-    })
-    .catch(error => {
-    console.error('API Error:', error);
-    });
-    </script>
+  <div class="search-container">
+    <input type="text" id="search-input" class="search-input" placeholder="Search by location name">
+    <label for="search-input" class="search-icon">
+      <img src="data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot; height=&quot;16&quot; fill=&quot;currentColor&quot; class=&quot;bi bi-search&quot; viewBox=&quot;0 0 16 16&quot;> <path d=&quot;M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z&quot; fill=&quot;%23757575&quot;></path> </svg>" alt="Search Icon">
+    </label>
   </div>
+  <div id="grid-container"></div>
 </section>
 <footer class="flex">
   <h2 class="section-header">ground hive</h2>
