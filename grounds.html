@@ -18,50 +18,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/grounds.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script>
-    fetch('http://localhost:8080/location/list')
-      .then(response => response.json())
-      .then(data => {
-        console.log("Printing");
-        const gridData = data;
-        const gridContainer = document.getElementById('grid-container');
-        const searchInput = document.getElementById('search-input');
-
-        gridContainer.style.display = 'grid';
-        gridContainer.style.gridTemplateColumns = 'repeat(4, 1fr)';
-
-        function updateGrid() {
-          gridContainer.innerHTML = '';
-
-          const searchValue = searchInput.value.toLowerCase();
-
-          gridData.forEach(location => {
-            if (location.name.toLowerCase().includes(searchValue)) {
-              const gridItem = document.createElement('div');
-              gridItem.classList.add('grid-item');
-              gridItem.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${location.imageUrls[0]})`;
-
-              const nameElement = document.createElement('h3');
-              nameElement.textContent = location.name;
-
-              const descriptionElement = document.createElement('p');
-              descriptionElement.textContent = location.location;
-
-              gridItem.appendChild(nameElement);
-              gridItem.appendChild(descriptionElement);
-
-              gridContainer.appendChild(gridItem);
-            }
-          });
-        }
-
-        searchInput.addEventListener('input', updateGrid);
-        updateGrid();
-      })
-      .catch(error => {
-        console.error('API Error:', error);
-      });
-  </script>
+  <script src="js/grounds.js"></script>
 </head>
 <body class="flex">
 
