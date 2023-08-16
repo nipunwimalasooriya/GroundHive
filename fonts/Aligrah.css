@@ -1,0 +1,43 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Aligrah';
+    font-weight: 400;
+    src: url('Aligarh-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aligrah';
+    font-weight: 300;
+    src: url('Aligarh-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aligrah';
+    font-weight: 500;
+    src: url('Aligarh-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aligrah';
+    font-weight: 600;
+    src: url('Aligarh-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aligrah';
+    font-weight: 700;
+    src: url('Aligarh-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aligrah';
+    font-weight: 800;
+    src: url('Aligarh-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aligrah';
+    font-weight: 900;
+    src: url('Aligarh-Black.woff') format('woff');
+}

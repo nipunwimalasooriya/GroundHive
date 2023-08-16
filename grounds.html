@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ground Hive | Contact Us</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.web-manifest">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/grounds.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="flex">
+
+<section id="navbar">
+  <div class="logo">
+    <img src="img/logo.png" alt="">
+  </div>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="grounds.html">Grounds</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+
+    </ul>
+  </div>
+  <div class="nav-buttons">
+    <button id="nav-booking-button">
+      Add a Ground
+    </button>
+    <button id="user-avatar">
+      <i class="fas fa-user"></i>
+    </button>
+
+  </div>
+</section>
+<!-- contact section  -->
+<section id="contact" class="Ground_display">
+
+  <div class="wrapper">
+    <script>
+    fetch('http://localhost:8080/location')
+    .then(response => response.json())
+    .then(data => {
+      const gridData = data;
+      const gridContainer = document.getElementById('grid-container');
+      gridData.forEach(location => {
+        const gridItem = document.createElement('div');
+        gridItem.classList.add('grid-item');
+
+        const nameElement = document.createElement('h3');
+        nameElement.textContent = location.name;
+
+        const descriptionElement = document.createElement('p');
+        descriptionElement.textContent = location.description;
+
+        const imageContainer = document.createElement('div');
+        imageContainer.classList.add('image-container');
+        location.imageUrls.forEach(imageUrl => {
+          const imgElement = document.createElement('img');
+          imgElement.src = imageUrl;
+          imageContainer.appendChild(imgElement);
+        });
+
+        gridItem.appendChild(nameElement);
+        gridItem.appendChild(descriptionElement);
+        gridItem.appendChild(imageContainer);
+
+        gridContainer.appendChild(gridItem);
+      });
+    })
+    .catch(error => {
+    console.error('API Error:', error);
+    });
+    </script>
+  </div>
+</section>
+<footer class="flex">
+  <h2 class="section-header">ground hive</h2>
+  <div class="center">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+  </div>
+  <p class="copyright">Copyright 2024 © GroundHive. All rights reserved.</p>
+</footer>
+</body>
+</html>

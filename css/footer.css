@@ -1,0 +1,41 @@
+/* variables */
+
+/* import local Aligrah font  */
+
+:root {
+  --primaryGreen: #435730;
+  --primaryDarkGreen: #27321c;
+  --neutralGray: #dde1d6;
+  --neutralWhite: #fff;
+}
+
+footer {
+  width: 100%;
+  flex-direction: column;
+  padding: 5.6rem;
+  background-color: var(--primaryDarkGreen);
+  color: var(--neutralGray);
+}
+
+footer .section-header {
+  font-size: 6.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+footer .copyright {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.center{
+  margin: auto;
+  text-align: center;
+  font-size: x-large;
+}
+
+.fa-brands {
+  margin: 0 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}

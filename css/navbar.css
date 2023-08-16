@@ -1,0 +1,70 @@
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+  box-shadow: 0 7px 10px 5px #f2f2f2;
+
+}
+
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+
+}
+
+.menu ul li {
+  margin: 0 25px;
+  font-size: 20px;
+
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: #435730;
+  font-weight: 580;
+  font-size: 18px;
+  font-family: Aligarh;
+
+}
+
+.nav-buttons {
+}
+
+#nav-booking-button {
+  height: 50px;
+  width: 150px;
+  font-size: 15px;
+  background: #435730;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  font-weight: 550;
+  outline: none;
+  margin: 0 15px 0 0;
+  cursor: pointer;
+  font-family: Aligarh;
+}
+
+
+
+#user-avatar {
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  color: #fff;
+  background: #435730;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin: 0 0 0 15px;
+  cursor: pointer;
+
+}
+
+.logo img {
+  height: 70px;
+}
