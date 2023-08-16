@@ -24,7 +24,7 @@ fetch('http://localhost:8080/location/list')
           const gridItem = document.createElement('div');
           gridItem.classList.add('grid-item');
           gridItem.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${location.imageUrls[0]})`;
-
+          gridItem.style.backgroundSize = 'cover';
           const nameElement = document.createElement('h3');
           nameElement.textContent = location.name;
 
