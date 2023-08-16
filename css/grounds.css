@@ -7,7 +7,7 @@
 
 
 .search-container {
-  width: 80%;
+  width: 50%;
   margin: 40px auto;
   position: relative;
 }
@@ -31,22 +31,13 @@
   cursor: pointer;
 }
 
-.grid-container {
-  gap: 20px;
-  padding: 20px;
-  background-color: #fff;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-}
-
 /* Style individual grid items */
 .grid-item {
   border: 1px solid #ccc;
   padding: 15px;
   text-align: left;
   height: 250px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 20px;
 }
 

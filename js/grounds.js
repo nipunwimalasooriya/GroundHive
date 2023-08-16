@@ -7,7 +7,12 @@ fetch('http://localhost:8080/location/list')
     const searchInput = document.getElementById('search-input');
 
     gridContainer.style.display = 'grid';
-    gridContainer.style.gridTemplateColumns = 'repeat(4, 1fr)';
+    gridContainer.style.gridTemplateColumns = 'repeat(3, 1fr)';
+    gridContainer.style.marginLeft = '150px';
+    gridContainer.style.marginRight = '150px';
+    gridContainer.style.marginTop = '50px';
+    gridContainer.style.marginBottom = '50px';
+
 
     function updateGrid() {
       gridContainer.innerHTML = '';
