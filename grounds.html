@@ -48,10 +48,12 @@
 <section id="contact" class="Ground_display">
 
   <div class="wrapper">
+    <div id="grid-container"></div>
     <script>
-    fetch('http://localhost:8080/location')
+    fetch('http://localhost:8080/location/list')
     .then(response => response.json())
     .then(data => {
+      console.log("Printing")
       const gridData = data;
       const gridContainer = document.getElementById('grid-container');
       gridData.forEach(location => {
@@ -62,7 +64,7 @@
         nameElement.textContent = location.name;
 
         const descriptionElement = document.createElement('p');
-        descriptionElement.textContent = location.description;
+        descriptionElement.textContent = location.location;
 
         const imageContainer = document.createElement('div');
         imageContainer.classList.add('image-container');
