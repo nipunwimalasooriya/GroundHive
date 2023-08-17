@@ -38,25 +38,39 @@ document.addEventListener("DOMContentLoaded",
     };
     xhr.send();
   });
+$(document).ready(function() {
+  $('#bookingForm').submit(function(event) {
+    event.preventDefault();
+    // Prevent the default form submission behavior
 
-document.getElementsByClassName('addAGround-form flex').addEventListener('submit', function (event) {
-  event.preventDefault(); // Prevents the default form submission
+    const name = $('#name').val();
+    const selectedDate = $('#selectedDate').val();
+    const startTime = selectedDate + "T" + $('#startTime').val();
+    const endTime = selectedDate + "T" + $('#endTime').val();
+    const user = localStorage.getItem("userId");
+    const location = getParameterByName("locationId");
 
-  // Get the selected date value
-  const selectedDate = document.getElementById('selectedDate').value;
+    const bookingData = {
+      name: name,
+      startTime: startTime,
+      endTime: endTime,
+      user: user,
+      location: location
+    };
 
-  // You can perform further processing with the selected date, such as validation or sending it to a server
-  console.log('Selected date:', selectedDate);
-});
 
-document.getElementsByClassName('addAGround-form flex').addEventListener('submit', function (event) {
-  event.preventDefault(); // Prevents the default form submission
+    $.ajax({
+      url: 'http://localhost:8080/booking',
+      method: 'POST',
+      contentType: 'application/json',
+      data: JSON.stringify(bookingData),
+      success: function(data) {
+        console.log(data);// You can handle the response data here
 
-  // Get the selected start and end times
-  const startTime = document.getElementById('startTime').value;
-  const endTime = document.getElementById('endTime').value;
-
-  // You can perform further processing with the selected times, such as validation or calculations
-  console.log('Start Time:', startTime);
-  console.log('End Time:', endTime);
+      },
+      error: function(error) {
+        console.error('Error:', error);
+      }
+    });
+  });
 });
