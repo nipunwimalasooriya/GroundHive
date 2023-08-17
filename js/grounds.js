@@ -13,7 +13,6 @@ fetch('http://localhost:8080/location/list')
     gridContainer.style.marginTop = '50px';
     gridContainer.style.marginBottom = '50px';
 
-
     function updateGrid() {
       gridContainer.innerHTML = '';
 
@@ -24,12 +23,20 @@ fetch('http://localhost:8080/location/list')
           const gridItem = document.createElement('div');
           gridItem.classList.add('grid-item');
           gridItem.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${location.imageUrls[0]})`;
-
+          gridItem.style.backgroundSize = 'cover';
           const nameElement = document.createElement('h3');
           nameElement.textContent = location.name;
 
           const descriptionElement = document.createElement('p');
           descriptionElement.textContent = location.location;
+
+          const link = document.createElement('a')
+          link.href = "bookAGround.html?locationId=" + location.id;
+
+          // Add click event listener to each grid item
+          gridItem.addEventListener('click', () => {
+            link.click()
+          });
 
           gridItem.appendChild(nameElement);
           gridItem.appendChild(descriptionElement);
