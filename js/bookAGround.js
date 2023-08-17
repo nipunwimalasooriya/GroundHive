@@ -39,6 +39,28 @@ document.addEventListener("DOMContentLoaded",
     xhr.send();
   });
 $(document).ready(function() {
+
+  $.ajax({
+    url: 'https://api.openweathermap.org/data/2.5/forecast?lat=6.7197996&lon=80.7719451&appid=d8ad9e6cb12eddceda454a86518491b6',
+    method: 'GET',
+    success: function(data) {
+      console.log(data)
+      const images = document.getElementsByClassName("weather-img");
+      let i = 0;
+      for(const element of data.list) {
+        if (i >= images.length) break;
+        images[i].src = 'https://openweathermap.org/img/wn/' + element.weather[0].icon + '@2x.png'
+        i++;
+      }
+
+
+    },
+    error: function(error) {
+      console.error('Error:', error);
+    }
+  })
+
+
   $('#bookingForm').submit(function(event) {
     event.preventDefault();
     // Prevent the default form submission behavior
