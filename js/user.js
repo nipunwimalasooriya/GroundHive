@@ -1,6 +1,9 @@
 $(document).ready(function () {
 
   const userId = localStorage.getItem("userId")
+  if(!userId) {
+    document.getElementById("login-link").click();
+  }
 
 
 

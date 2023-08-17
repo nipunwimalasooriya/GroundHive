@@ -70,6 +70,9 @@ $(document).ready(function() {
     const startTime = selectedDate + "T" + $('#startTime').val();
     const endTime = selectedDate + "T" + $('#endTime').val();
     const user = localStorage.getItem("userId");
+    if(!user) {
+      document.getElementById("login-link").click()
+    }
     const location = getParameterByName("locationId");
 
     const bookingData = {

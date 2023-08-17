@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  const indexLink = document.getElementById('index');
+  const indexLink = document.getElementById('user-link');
   console.log(localStorage.getItem("userId"))
   if(localStorage.getItem("userId")) {
     // indexLink.click()
