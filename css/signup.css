@@ -1,0 +1,141 @@
+:root {
+  --primaryGreen: #435730;
+  --primaryDarkGreen: #27321c;
+  --neutralGray: #bdc2b4;
+  --neutralWhite: #fff;
+}
+
+
+/*background of ground Page*/
+body {
+  background-image: url('../images/BG.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Aligarh', Arial, sans-serif;
+}
+
+/*form*/
+.grandParentContaniner {
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.parentContainer {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*outer box*/
+.frame {
+  background-color: #ffffff;
+  border: 2px solid #27321C;
+  border-radius: 18px;
+  color: #27321C;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Aligarh', Arial, sans-serif;
+  font-weight: 500;
+  height: max-content;
+  width: 600px;
+}
+
+/*Sign Up to ground Hive*/
+h2 {
+  color: #27321C;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+/*button formatinng*/
+.btn-container {
+  position: relative;
+  margin-top: 20px;
+  color: #DDE1D6;
+}
+
+/*text buttons*/
+.btn,
+input[type=text] {
+  width: 80%;
+  padding: 10px 10px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border: 2px solid #27321C;
+  border-radius: 30px;
+  background: #ffffff;
+  font-family: 'Aligarh', Arial, sans-serif;
+  color: #27321C;
+  font-size: medium;
+  text-align: left;
+}
+
+::placeholder {
+  color: var(--neutralGray);
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus {
+  background-color: #27321C;
+  color: #DDE1D6;
+}
+
+/*images*/
+.btn-container img {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 40px;
+}
+
+/*user name*/
+.formImage {
+  position: absolute;
+  left: 1px;
+}
+
+
+/*arrow*/
+.img5 {
+  position: absolute;
+  left: 800px;
+  transform: translateY(-50%);
+}
+
+/*Signup button*/
+.btn-container input[type=text] {
+  padding-left: 50px;
+}
+
+.button, input[type=submit] {
+  width: 50%;
+  padding: 12px 10px;
+  margin: 10px 0 15px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  background: #DDE1D6;
+  font-family: 'Aligarh', Arial, sans-serif;
+  color: #27321C;
+  font-size: 25px;
+  text-align: center;
+}
+
+.button:hover, input[type=submit]:hover {
+  background: #27321C;
+  color: #DDE1D6;
+
+}
+
+.img5:hover {
+  fill: #DDE1D6;
+}
