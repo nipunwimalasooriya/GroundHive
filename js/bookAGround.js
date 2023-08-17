@@ -91,11 +91,19 @@ $(document).ready(function() {
       data: JSON.stringify(bookingData),
       success: function(data) {
         console.log(data);// You can handle the response data here
-
+        showSnackbar('Bokking added');
       },
       error: function(error) {
         console.error('Error:', error);
+        showSnackbar(error.responseText); // Show error message
       }
     });
   });
+  function showSnackbar(message) {
+    var x = document.getElementById("snackbar")
+    snackbar.innerText = message;
+    snackbar.className = 'show';
+    setTimeout(function() {snackbar.className = snackbar.className.replace('show', '');}, 3000); // Display for 3 seconds
+  }
+
 });
