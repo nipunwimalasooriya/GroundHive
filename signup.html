@@ -164,7 +164,11 @@
       fill: #DDE1D6;
     }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="js/signup.js"></script>
 </head>
+
+
 
 <body>
 <br>
@@ -175,24 +179,28 @@
       <br><img src='images/Logo.svg' class="center" height="100px" width="100px"><br>
       <h2> Sign Up to Ground Hive</h2>
       <div class="btn-container">
+        <form id="signupForm">
         <div class="img1"><img src="images/1.svg" height="40px" width="40px"></div>
-        <input type="text" class="btn" placeholder="Enter Email Address">
+        <input id="email" type="text" class="btn" placeholder="Enter Email Address" name="email">
 
         <div class="img2"><img src="images/2.svg" height="40px" width="40px"></div>
-        <input type="text" class="btn" placeholder="Enter User Name">
+        <input id="username" type="text" class="btn" placeholder="Enter User Name" name="username">
 
         <div class="img3"><img src="images/3.svg" height="40px" width="40px"></div>
-        <input type="text" class="btn" placeholder="Enter Password">
+        <input id="password" type="text" class="btn" placeholder="Enter Password" name="password">
 
         <div class="img4"><img src="images/4.svg" height="40px" width="40px"></div>
-        <input type="text" class="btn" placeholder="Enter Contact Number">
+        <input id="mobileNo" type="text" class="btn" placeholder="Enter Contact Number" name="mobileNo">
         <br>
         <input type="submit" class="button" value=" Sign Up        ">
+        </form>
       </div>
     </div>
     <br>
     <div class="img5"><img src="images/A1.svg"></div>
   </div>
 </div>
+
+<a href="index.html" id="index"></a>
 </body>
 </html>
