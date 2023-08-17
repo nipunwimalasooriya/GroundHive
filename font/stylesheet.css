@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'Aligarh';
+    src: url('Aligarh-Black.eot');
+    src: local('Aligarh Black'), local('Aligarh-Black'),
+        url('Aligarh-Black.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-Black.woff2') format('woff2'),
+        url('Aligarh-Black.woff') format('woff'),
+        url('Aligarh-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aligarh Extra';
+    src: url('Aligarh-ExtraBold.eot');
+    src: local('Aligarh Extra Bold'), local('Aligarh-ExtraBold'),
+        url('Aligarh-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-ExtraBold.woff2') format('woff2'),
+        url('Aligarh-ExtraBold.woff') format('woff'),
+        url('Aligarh-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aligarh Extra';
+    src: url('Aligarh-ExtraLightItalic.eot');
+    src: local('Aligarh Extra Light Italic'), local('Aligarh-ExtraLightItalic'),
+        url('Aligarh-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-ExtraLightItalic.woff2') format('woff2'),
+        url('Aligarh-ExtraLightItalic.woff') format('woff'),
+        url('Aligarh-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aligarh';
+    src: url('Aligarh-Bold.eot');
+    src: local('Aligarh Bold'), local('Aligarh-Bold'),
+        url('Aligarh-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-Bold.woff2') format('woff2'),
+        url('Aligarh-Bold.woff') format('woff'),
+        url('Aligarh-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aligarh';
+    src: url('Aligarh-BlackItalic.eot');
+    src: local('Aligarh Black Italic'), local('Aligarh-BlackItalic'),
+        url('Aligarh-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-BlackItalic.woff2') format('woff2'),
+        url('Aligarh-BlackItalic.woff') format('woff'),
+        url('Aligarh-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aligarh';
+    src: url('Aligarh-BoldItalic.eot');
+    src: local('Aligarh Bold Italic'), local('Aligarh-BoldItalic'),
+        url('Aligarh-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-BoldItalic.woff2') format('woff2'),
+        url('Aligarh-BoldItalic.woff') format('woff'),
+        url('Aligarh-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aligarh Italic Variable';
+    src: url('AligarhItalicVariable-BlkIt.eot');
+    src: local('Aligarh Italic Variable'), local('AligarhItalicVariable-BlkIt'),
+        url('AligarhItalicVariable-BlkIt.eot?#iefix') format('embedded-opentype'),
+        url('AligarhItalicVariable-BlkIt.woff2') format('woff2'),
+        url('AligarhItalicVariable-BlkIt.woff') format('woff'),
+        url('AligarhItalicVariable-BlkIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aligarh Extra';
+    src: url('Aligarh-ExtraBoldItalic.eot');
+    src: local('Aligarh Extra Bold Italic'), local('Aligarh-ExtraBoldItalic'),
+        url('Aligarh-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-ExtraBoldItalic.woff2') format('woff2'),
+        url('Aligarh-ExtraBoldItalic.woff') format('woff'),
+        url('Aligarh-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aligarh Extra';
+    src: url('Aligarh-ExtraLight.eot');
+    src: local('Aligarh Extra Light'), local('Aligarh-ExtraLight'),
+        url('Aligarh-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-ExtraLight.woff2') format('woff2'),
+        url('Aligarh-ExtraLight.woff') format('woff'),
+        url('Aligarh-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aligarh Upright Variable';
+    src: url('AligarhUprightVariable-Black.eot');
+    src: local('Aligarh Upright Variable'), local('AligarhUprightVariable-Black'),
+        url('AligarhUprightVariable-Black.eot?#iefix') format('embedded-opentype'),
+        url('AligarhUprightVariable-Black.woff2') format('woff2'),
+        url('AligarhUprightVariable-Black.woff') format('woff'),
+        url('AligarhUprightVariable-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aligarh Semi';
+    src: url('Aligarh-SemiBold.eot');
+    src: local('Aligarh Semi Bold'), local('Aligarh-SemiBold'),
+        url('Aligarh-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-SemiBold.woff2') format('woff2'),
+        url('Aligarh-SemiBold.woff') format('woff'),
+        url('Aligarh-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aligarh';
+    src: url('Aligarh-LightItalic.eot');
+    src: local('Aligarh Light Italic'), local('Aligarh-LightItalic'),
+        url('Aligarh-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-LightItalic.woff2') format('woff2'),
+        url('Aligarh-LightItalic.woff') format('woff'),
+        url('Aligarh-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aligarh';
+    src: url('Aligarh-MediumItalic.eot');
+    src: local('Aligarh Medium Italic'), local('Aligarh-MediumItalic'),
+        url('Aligarh-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-MediumItalic.woff2') format('woff2'),
+        url('Aligarh-MediumItalic.woff') format('woff'),
+        url('Aligarh-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aligarh Semi';
+    src: url('Aligarh-SemiBoldItalic.eot');
+    src: local('Aligarh Semi Bold Italic'), local('Aligarh-SemiBoldItalic'),
+        url('Aligarh-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-SemiBoldItalic.woff2') format('woff2'),
+        url('Aligarh-SemiBoldItalic.woff') format('woff'),
+        url('Aligarh-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aligarh';
+    src: url('Aligarh-Medium.eot');
+    src: local('Aligarh Medium'), local('Aligarh-Medium'),
+        url('Aligarh-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-Medium.woff2') format('woff2'),
+        url('Aligarh-Medium.woff') format('woff'),
+        url('Aligarh-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aligarh';
+    src: url('Aligarh-Light.eot');
+    src: local('Aligarh Light'), local('Aligarh-Light'),
+        url('Aligarh-Light.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-Light.woff2') format('woff2'),
+        url('Aligarh-Light.woff') format('woff'),
+        url('Aligarh-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aligarh';
+    src: url('Aligarh-Regular.eot');
+    src: local('Aligarh'), local('Aligarh-Regular'),
+        url('Aligarh-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-Regular.woff2') format('woff2'),
+        url('Aligarh-Regular.woff') format('woff'),
+        url('Aligarh-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aligarh';
+    src: url('Aligarh-Italic.eot');
+    src: local('Aligarh Italic'), local('Aligarh-Italic'),
+        url('Aligarh-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-Italic.woff2') format('woff2'),
+        url('Aligarh-Italic.woff') format('woff'),
+        url('Aligarh-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aligarh';
+    src: url('Aligarh-Thin.eot');
+    src: local('Aligarh Thin'), local('Aligarh-Thin'),
+        url('Aligarh-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-Thin.woff2') format('woff2'),
+        url('Aligarh-Thin.woff') format('woff'),
+        url('Aligarh-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aligarh';
+    src: url('Aligarh-ThinItalic.eot');
+    src: local('Aligarh Thin Italic'), local('Aligarh-ThinItalic'),
+        url('Aligarh-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Aligarh-ThinItalic.woff2') format('woff2'),
+        url('Aligarh-ThinItalic.woff') format('woff'),
+        url('Aligarh-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
