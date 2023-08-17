@@ -1,0 +1,135 @@
+
+
+/* import local Aligrah font  */
+@import url(fonts/Aligrah.css);
+
+/* variables */
+:root {
+  --primaryGreen: #435730;
+  --primaryDarkGreen: #27321c;
+  --neutralGray: #bdc2b4;
+  --neutralWhite: #fff;
+}
+
+/* helper class */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* global reset */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: Aligarh;
+}
+
+body,
+input,
+textarea,
+::placeholder,
+button,
+a {
+  font-family: 'Aligrah', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+body {
+  flex-direction: column;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  height: 800px;
+}
+
+
+
+#username {
+  font-size: 40px;
+}
+
+#email {
+  font-size: 30px;
+  padding-top: 20px;
+}
+#phone-num {
+  font-size: 30px;
+  padding-top: 20px;
+}
+#text-container {
+  text-align: center;
+}
+#user-details {
+  height: 100px;
+  width: 100px;
+  font-size: 80px;
+  color: #435730;
+  text-align: center;
+}
+
+#booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#booking-list h2{
+  font-size: 30px;
+}
+#booking-list h3{
+  font-size: 20px;
+}
+#booking-list p{
+  font-size: 18px;
+}
+
+#booking {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 130px;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 10px;
+}
+#booking-itm {
+  margin: 10px 20px;
+}
+#booking-ground {
+  width: 200px;
+}
+#booking-time {
+  padding: 10px;
+}
+#user {
+  height: 800px;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 10px;
+}
+#user-details {
+  padding-top: 50px;
+  height: 230px;
+  display: flex;
+  margin-left: 35%;
+}
+#user-details img {
+  border-radius: 200px;
+  border: #27321c;
+}
+#text-container {
+  padding-top: 50px;
+}
+
