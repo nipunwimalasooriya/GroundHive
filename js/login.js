@@ -2,7 +2,7 @@ $(document).ready(function() {
   const indexLink = document.getElementById('index');
   console.log(localStorage.getItem("userId"))
   if(localStorage.getItem("userId")) {
-    indexLink.click()
+    // indexLink.click()
   }
   $('#loginForm').submit(function(event) {
     event.preventDefault(); // Prevent the default form submission behavior

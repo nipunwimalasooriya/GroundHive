@@ -3,153 +3,10 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="font/stylesheet.css">
+  <link rel="stylesheet" href="css/login.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="js/login.js"></script>
-  <style>
-    /*background of ground Page*/
-    body {
-      background-image: url('images/BG.svg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      font-family: 'Aligarh', Arial, sans-serif;
-    }
-
-    /*form*/
-    .grandParentContaniner {
-      display: table;
-      height: 100%;
-      margin: 0 auto;
-      padding: 30px;
-    }
-
-    .parentContainer {
-      display: table-cell;
-      vertical-align: middle;
-    }
-
-    /*outer box*/
-    .frame {
-      background-color: #ffffff;
-      border: 2px solid #27321C;
-      border-radius: 18px;
-      color: #27321C;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      font-family: 'Aligarh', Arial, sans-serif;
-      font-weight: 500;
-      height: max-content;
-      width: 600px;
-    }
-
-    /*Sign Up to ground Hive*/
-    h2 {
-      color: #27321C;
-      font-weight: normal;
-      font-size: 25px;
-    }
-
-    /*button formatinng*/
-    .btn-container {
-      position: relative;
-      margin-top: 20px;
-      color: #DDE1D6;
-    }
-
-    /*text buttons*/
-    .btn,
-    input[type=text] {
-      width: 80%;
-      padding: 10px 10px;
-      margin: 5px 0 5px 0;
-      display: inline-block;
-      border: 2px solid #27321C;
-      border-radius: 30px;
-      background: #ffffff;
-      font-family: 'Aligarh', Arial, sans-serif;
-      color: #27321C;
-      font-size: medium;
-      text-align: left;
-    }
-
-    ::placeholder {
-      color: #DDE1D6;
-    }
-
-    /* Add a background color when the inputs get focus */
-    input[type=text]:focus {
-      background-color: #27321C;
-      color: #DDE1D6;
-    }
-
-    /*images*/
-    .btn-container img {
-      position: absolute;
-      top: 28px;
-      left: 32px;
-      transform: translateY(-50%);
-      height: 40px;
-      width: 40px;
-    }
-
-
-    /*user name*/
-    .img2 {
-      position: absolute;
-      left: 1px;
-      transform: translateY(-50%);
-    }
-
-    /*password*/
-    .img3 {
-      position: absolute;
-      top: 57px;
-      left: 1px;
-      transform: translateY(-50%);
-    }
-
-    /*arrow*/
-    .img5 {
-      position: absolute;
-      top: 605px;
-      left: 800px;
-      transform: translateY(-50%);
-    }
-
-    /*log in & Signup button*/
-    .btn-container input[type=text] {
-      padding-left: 50px;
-    }
-
-    .button, input[type=submit] {
-      width: 50%;
-      padding: 10px 8px;
-      margin: 8px 0 15px 0;
-      display: inline-block;
-      border: none;
-      border-radius: 30px;
-      background: #DDE1D6;
-      font-family: 'Aligarh', Arial, sans-serif;
-      color: #27321C;
-      font-size: 25px;
-      text-align: center;
-    }
-
-    .button:hover, input[type=submit]:hover {
-      background: #27321C;
-      color: #DDE1D6;
-
-    }
-
-    .img5:hover {
-      fill: #DDE1D6;
-    }
-  </style>
+  <title>Login</title>
 </head>
 <body>
 <br>
@@ -163,27 +20,27 @@
       <div class="btn-container">
         <form id="loginForm" action="index.html">
 
-          <div class="img2"><img src="images/2.svg" height="40px" width="40px"></div>
+          <div class="formImage">
+            <img src="images/2.svg" height="40px" width="40px">
+          </div>
           <input type="text" class="btn" placeholder="Enter User Name" name="username">
 
-          <div class="img3"><img src="images/3.svg" height="40px" width="40px"></div>
+          <div class="formImage">
+            <img src="images/3.svg" height="40px" width="40px">
+          </div>
           <input type="text" class="btn" placeholder="Enter User Password" name="password">
 
-          <input type="submit" class="button" value=" Log in">
+          <input type="submit" class="button" value="Log in">
         </form>
       </div>
-      <center>
-        <a href=""><u> Forget My Password</u></a></center>
+      <div style="text-align: center;">
+        <a href=""><u> Forget My Password</u></a>
+      </div>
       <h4> Or if You are New to Here, Let's Sign up</h4>
-
-      <input type="submit" class="button" value=" Sign Up"></div>
+      <input type="submit" class="button" value="Sign Up"></div>
     <br>
-    <div class="img5"><img src="images/A1.svg"></div>
-
   <a href="index.html" id="index"></a>
   </div>
-</div>
-</div>
 </div>
 </body>
 </html>
