@@ -20,7 +20,7 @@
   min-height: 90vh;
   display: flex;
   margin: 15px 0 0 0;
-  background: url(/img/image.jpg) no-repeat center;
+  background: url(/images/image.jpg) no-repeat center;
   background-size: cover;
 }
 
