@@ -14,13 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
         if (xhr.status === 200) {
           // Successful response from the server
           console.log("Form submitted successfully!");
+          showSnackbar("Form submitted successfully!")
           // You can perform additional actions here if needed
         } else {
           // Error handling
           console.error("Form submission failed:", xhr.statusText);
+          showSnackbar("Form submission failed:", xhr.statusText)
         }
       }
     };
     xhr.send(formData);
   });
 });
+
+function showSnackbar(message) {
+  var x = document.getElementById("snackbar")
+  snackbar.innerText = message;
+  snackbar.className = 'show';
+  setTimeout(function() {snackbar.className = snackbar.className.replace('show', '');}, 3000); // Display for 3 seconds
+}
