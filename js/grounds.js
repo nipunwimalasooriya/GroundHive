@@ -1,4 +1,4 @@
-fetch('http://localhost:8080/location/list')
+fetch('https://se-group-12.uc.r.appspot.com/location/list')
   .then(response => response.json())
   .then(data => {
     console.log("Printing");

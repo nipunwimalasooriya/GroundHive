@@ -8,7 +8,7 @@ $(document).ready(function() {
     event.preventDefault(); // Prevent the default form submission behavior
     const userName = $('input[name="username"]').val();
     const password = $('input[name="password"]').val();
-    const url = `http://localhost:8080/user/login?userName=${userName}&password=${password}`;
+    const url = `https://se-group-12.uc.r.appspot.com/user/login?userName=${userName}&password=${password}`;
 
     $.ajax({
       url: url,

@@ -16,7 +16,7 @@ $(document).ready(function() {
     };
 
     $.ajax({
-      url: 'http://localhost:8080/user',
+      url: 'https://se-group-12.uc.r.appspot.com/user',
       method: 'POST',
       contentType: 'application/json',
       data: JSON.stringify(user),

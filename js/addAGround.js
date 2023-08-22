@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const formData = new FormData(form);
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:8080/location", true);
+    xhr.open("POST", "https://se-group-12.uc.r.appspot.com/location", true);
 
     xhr.onreadystatechange = function () {
       if (xhr.readyState === XMLHttpRequest.DONE) {

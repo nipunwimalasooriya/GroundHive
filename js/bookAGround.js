@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded",
 
 // Fetch location details based on locationId using AJAX
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://localhost:8080/location?id=' + locationId, true);
+    xhr.open('GET', 'https://se-group-12.uc.r.appspot.com/location?id=' + locationId, true);
     xhr.onreadystatechange = function () {
       if (xhr.readyState === XMLHttpRequest.DONE) {
         if (xhr.status === 200) {
@@ -85,7 +85,7 @@ $(document).ready(function() {
 
 
     $.ajax({
-      url: 'http://localhost:8080/booking',
+      url: 'https://se-group-12.uc.r.appspot.com/booking',
       method: 'POST',
       contentType: 'application/json',
       data: JSON.stringify(bookingData),

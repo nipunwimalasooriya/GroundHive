@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 
   $.ajax({
-    url: 'http://localhost:8080/user/get?id=' + userId,
+    url: 'https://se-group-12.uc.r.appspot.com/user/get?id=' + userId,
     method: 'GET',
     success: function (data) {
       document.getElementById('username').textContent = data.username
@@ -21,7 +21,7 @@ $(document).ready(function () {
   })
 
   $.ajax({
-    url: 'http://localhost:8080/booking?userId=' + userId,
+    url: 'https://se-group-12.uc.r.appspot.com/booking?userId=' + userId,
     method: 'GET',
     success: function (data) {
       const grid = document.getElementById('booking-list')
@@ -49,7 +49,7 @@ $(document).ready(function () {
         const bookingLocation = document.createElement('h3')
         bookingLocation.setAttribute('id', 'location')
         $.ajax({
-          url: 'http://localhost:8080/location?id=' + booking.location,
+          url: 'https://se-group-12.uc.r.appspot.com/location?id=' + booking.location,
           method: 'GET',
           success: function (data) {
             bookingName.textContent = data.name
