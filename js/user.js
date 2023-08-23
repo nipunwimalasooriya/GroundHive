@@ -122,7 +122,8 @@ $(document).ready(function () {
     localStorage.clear();
 
     // Redirect the user to the login page or any other desired page
-    window.location.href = "login.html"; // Replace with the appropriate URL
+    // window.location.href = "login.html"; // Replace with the appropriate URL
+    document.getElementById("login-link").click()
   }
 
 // Example: Attach the logout function to a logout button or link
