@@ -75,6 +75,20 @@ input[type=text] {
   font-size: medium;
   text-align: left;
 }
+.btn,
+input[type=password] {
+  width: 80%;
+  padding: 10px 10px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border: 2px solid #27321C;
+  border-radius: 30px;
+  background: #ffffff;
+  font-family: 'Aligarh', Arial, sans-serif;
+  color: #27321C;
+  font-size: medium;
+  text-align: left;
+}
 
 ::placeholder {
   color: var(--neutralGray);
@@ -115,6 +129,9 @@ input[type=text]:focus {
 .btn-container input[type=text] {
   padding-left: 50px;
 }
+.btn-container input[type=password] {
+  padding-left: 50px;
+}
 
 .button, input[type=submit] {
   width: 50%;
@@ -131,6 +148,11 @@ input[type=text]:focus {
 }
 
 .button:hover, input[type=submit]:hover {
+  background: #27321C;
+  color: #DDE1D6;
+
+}
+.button:hover, input[type=password]:hover {
   background: #27321C;
   color: #DDE1D6;
 

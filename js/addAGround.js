@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (xhr.readyState === XMLHttpRequest.DONE) {
         if (xhr.status === 200) {
           // Successful response from the server
-          console.log("Form submitted successfully!");
-          showSnackbar("Form submitted successfully!")
+          console.log("Ground added");
+          showSnackbar("Ground added")
           // You can perform additional actions here if needed
         } else {
           // Error handling

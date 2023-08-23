@@ -76,6 +76,20 @@ input[type=text] {
   font-size: medium;
   text-align: left;
 }
+.btn,
+input[type=password] {
+  width: 80%;
+  padding: 10px 10px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border: 2px solid #27321C;
+  border-radius: 30px;
+  background: #ffffff;
+  font-family: 'Aligarh', Arial, sans-serif;
+  color: #27321C;
+  font-size: medium;
+  text-align: left;
+}
 
 ::placeholder {
   color: var(--neutralGray);
@@ -113,6 +127,9 @@ input[type=text]:focus {
 
 /*Signup button*/
 .btn-container input[type=text] {
+  padding-left: 50px;
+}
+.btn-container input[type=password] {
   padding-left: 50px;
 }
 
