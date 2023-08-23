@@ -116,5 +116,16 @@ $(document).ready(function () {
   })
 
 
+// Function to perform logout by clearing local storage
+  function logout() {
+    // Clear local storage
+    localStorage.clear();
 
+    // Redirect the user to the login page or any other desired page
+    window.location.href = "login.html"; // Replace with the appropriate URL
+  }
+
+// Example: Attach the logout function to a logout button or link
+  const logoutButton = document.getElementById("logoutButton"); // Replace with the appropriate element ID
+  logoutButton.addEventListener("click", logout);
 })
