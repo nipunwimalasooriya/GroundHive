@@ -194,5 +194,14 @@ body {
   font-size: 15px;
 }
 #weather-img-container {
-  background-color: #27321c;
+  margin-top: 20px;
+  background-color: #b0d48c;
+  border-radius: 50px;
+  display: inline-block;
+  margin-right: 10px;
+}
+#weather-img-container p{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 15px;
 }
